@@ -14,21 +14,27 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-  width: 80%;
-  max-width: 1200px;
+  grid-template-columns: repeat(5, 1fr); /* 5 colonne */
+  grid-template-rows: repeat(3, 1fr); /* 3 righe */
+  gap: 0; /* Rimuovi spazio tra le celle */
+  width: 100%; /* Occupa tutto lo spazio del container */
+  height: 100%; /* Occupa tutto lo spazio verticale */
 }
 
 .grid-item {
-  background-color: #4CAF50;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px;
+  background-color: #c9c9c9;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding: 10px; /* Padding ridotto */
+  border: 1px solid #fff; /* Bordo bianco tra gli elementi */
 }
 
+.space {
+  padding: 20px; /* Padding ridotto */
+}
     </style>
 </head>
 <body>
@@ -151,23 +157,78 @@
     </div>
   </div>
 </div>
-<div class="container">  <section class="grid-container">
-    <div class="grid-item">Elemento 1</div>
-    <div class="grid-item">Elemento 2</div>
-    <div class="grid-item">Elemento 3</div>
-    <div class="grid-item">Elemento 4</div>
-    <div class="grid-item">Elemento 5</div>
-    <div class="grid-item">Elemento 6</div>
-    <div class="grid-item">Elemento 7</div>
-    <div class="grid-item">Elemento 8</div>
-    <div class="grid-item">Elemento 9</div>
-    <div class="grid-item">Elemento 10</div>
-    <div class="grid-item">Elemento 11</div>
-    <div class="grid-item">Elemento 12</div>
-    <div class="grid-item">Elemento 13</div>
-    <div class="grid-item">Elemento 14</div>
-    <div class="grid-item">Elemento 15</div>
+<div class="space"></div>
+<div class="container">
+  <section class="grid-container">
+    <a href="https://example.com/link1" class="grid-item">Elemento 1</a>
+    <a href="https://example.com/link2" class="grid-item">Elemento 2</a>
+    <a href="https://example.com/link3" class="grid-item">Elemento 3</a>
+    <a href="https://example.com/link4" class="grid-item">Elemento 4</a>
+    <a href="https://example.com/link5" class="grid-item">Elemento 5</a>
+    <a href="https://example.com/link6" class="grid-item">Elemento 6</a>
+    <a href="https://example.com/link7" class="grid-item">Elemento 7</a>
+    <a href="https://example.com/link8" class="grid-item">Elemento 8</a>
+    <a href="https://example.com/link9" class="grid-item">Elemento 9</a>
+    <a href="https://example.com/link10" class="grid-item">Elemento 10</a>
+    <a href="https://example.com/link11" class="grid-item">Elemento 11</a>
+    <a href="https://example.com/link12" class="grid-item">Elemento 12</a>
+    <a href="https://example.com/link13" class="grid-item">Elemento 13</a>
+    <a href="https://example.com/link14" class="grid-item">Elemento 14</a>
+    <a href="https://example.com/link15" class="grid-item">Elemento 15</a>
   </section>
 </div>
+</div>
+
+<div class="space"></div>
+
+<footer class="it-footer">
+  <div class="it-footer-main">
+    <div class="container">
+      <section>
+        <div class="row clearfix">
+          <div class="col-sm-12">
+            <div class="it-brand-wrapper">
+              <a href="#" data-focus-mouse="false">
+                <div class="it-brand-text">
+                  <h2>AVA gjdev</h2>
+                  <h3 class="d-none d-md-block">Il futuro è ora</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-4 border-white border-top">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 pb-2">
+            <h4><a href="#" title="Vai alla pagina: Contatti">Contatti</a></h4>
+            <p>
+              <strong>gjdev int</strong><br>
+            </p>
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="mailto:gabriel.jones@mail.urp.gjdev.it" title="Vai alla pagina: Posta Elettronica Certificata">mail : gabriel.jones@mail.urp.gjdev.it</a></li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 pb-2">
+            <h4><a href="https://gabrieljones.gjdev.it/" title="Vai alla pagina:">Gabriel Jones</a></h4>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="it-footer-small-prints clearfix">
+    <div class="container">
+      <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+        <li class="list-inline-item"><a href="https://gjdev.it/" title="gjdev.it">gjdev</a></li>
+        <li class="list-inline-item"><a href="https://gabrieljones.gjdev.it/" title="gjdev.it">gjdev</a></li>
+        <li class="list-inline-item"><a href="https://github.com/gjdev-org/ava.gjdev.it/" title="gjdev.it">Repository sito</a></li>
+        <li class="list-inline-item"><a href="https://ava.gjdev.it/so/trasparenza/index.html?sez-footer" title="gjdev.it">gjdev</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
