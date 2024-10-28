@@ -12,6 +12,22 @@
   font-family: "arial"
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.grid-item {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
 
     </style>
 </head>
@@ -135,9 +151,23 @@
     </div>
   </div>
 </div>
-<div class="container">
-<h1>About</h1>
-<p>Ava</p>
+<div class="container">  <section class="grid-container">
+    <div class="grid-item">Elemento 1</div>
+    <div class="grid-item">Elemento 2</div>
+    <div class="grid-item">Elemento 3</div>
+    <div class="grid-item">Elemento 4</div>
+    <div class="grid-item">Elemento 5</div>
+    <div class="grid-item">Elemento 6</div>
+    <div class="grid-item">Elemento 7</div>
+    <div class="grid-item">Elemento 8</div>
+    <div class="grid-item">Elemento 9</div>
+    <div class="grid-item">Elemento 10</div>
+    <div class="grid-item">Elemento 11</div>
+    <div class="grid-item">Elemento 12</div>
+    <div class="grid-item">Elemento 13</div>
+    <div class="grid-item">Elemento 14</div>
+    <div class="grid-item">Elemento 15</div>
+  </section>
 </div>
 </body>
 </html>
