@@ -11,29 +11,6 @@
         body {
             font-family: "arial"
         }
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .service {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .service h2 {
-            color: #007bff;
-        }
-        .service p {
-            color: #555;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
         .gjd-container {
             width: 80%;  
             max-width: 1200px;  
@@ -98,22 +75,17 @@
 <div class="container">
     <div class="gjd-container">
         <h1>Presentazione della Scuola AVA</h1>
-        <div class="grid-container">
-            <div class="grid-item">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://example.com/photo.jpg" alt="Foto della Scuola" style="width: 100%; height: auto;">
+            </div>
+            <div class="col-md-6">
                 <h2>Descrizione</h2>
                 <p>La Scuola AVA offre un ambiente educativo stimolante e inclusivo, dove gli studenti possono crescere e sviluppare le proprie capacità.</p>
-            </div>
-            <div class="grid-item">
                 <h2>Dirigenza</h2>
                 <p>Il nostro dirigente scolastico, Dott. Mario Rossi, ha oltre 20 anni di esperienza nel settore dell'istruzione e guida la scuola con passione e dedizione.</p>
-            </div>
-            <div class="grid-item">
                 <h2>Contatti</h2>
                 <p>Email: info@scuolaava.it<br>Telefono: +39 012 345 6789</p>
-            </div>
-            <div class="grid-item">
-                <h2>Foto della Scuola</h2>
-                <img src="https://example.com/photo.jpg" alt="Foto della Scuola" style="width: 100%; height: auto;">
             </div>
         </div>
     </div>
